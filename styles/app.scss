@@ -1,0 +1,22 @@
+@import 'fonts';
+@import './utilities/mixin';
+@import './custom-variables';
+
+$primary: #194b9b;
+$font-family-base: IRANSans, Roboto, Tahoma, serif;
+
+
+html,
+body {
+  overflow: auto;
+  font-size: 16px;
+  font-family: $font-family-base;
+  height: 100%;
+  max-height: 100%;
+  background-color: map-get($colors, 'gray-5');
+  box-sizing: border-box;
+  inset: 0;
+  width: 100%;
+  direction: rtl !important;
+
+}

@@ -1,12 +1,9 @@
+@import '../../custom-variables';
 
 @each $sizePrefix, $size in $font-sizes {
-  @each $breakpoint in map_keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-      .text-#{$sizePrefix}#{if($breakpoint == xs, '', '-' + $breakpoint)} {
+      .text-#{$sizePrefix} {
         font-size: $size;
       }
-    }
-  }
 }
 
 @each $weight, $font-weight in $font-weights {

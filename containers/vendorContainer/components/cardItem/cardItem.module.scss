@@ -1,0 +1,57 @@
+@import '../../../../styles/custom-variables';
+
+.cardItem {
+  &__card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    background-color: map-get($colors,'white');
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    &__price{
+      margin-right: 10px;
+    }
+  }
+  &__parentInfo{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    &__deliver{
+      display: flex;
+      flex-direction: row;
+    }
+    &__rate{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      &__greenBox{
+        //background-color: map-get($colors,'success-2');
+        background-color: rgba(0, 128, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 4px;
+        padding:2px;
+        margin-right: 5px;
+      }
+    }
+  }
+  &__imageContainer {
+    flex: 1;
+    max-width: 100%;
+    position: relative;
+    &__image {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+
+      width: 100%;
+      height: 50%;
+    }
+  }
+}
