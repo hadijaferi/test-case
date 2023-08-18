@@ -14,11 +14,14 @@ const request = {
     },
 }
 
-export const getVendorList = async (body: TReq) => {
-    const {data}: {data: TRes} = await request.get(
-        'vendors-list',{
-            params:body
-        }
-    );
-    return data;
+export const getVendorList = async (body: {
+  page: unknown;
+  lat: string;
+  long: string;
+  page_size: number;
+}) => {
+  const { data }: { data: TRes } = await request.get("vendors-list", {
+    params: body,
+  });
+  return data;
 };

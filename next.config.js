@@ -9,6 +9,6 @@ const withSvgr = require('next-plugin-svgr');
 
 module.exports = withSvgr({
     images: {
-        domains: ['cdn.snappfood.ir'],
+        domains: ['cdn.snappfood.ir','www.zoodfood.com'],
     },
 });

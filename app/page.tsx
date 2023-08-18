@@ -1,14 +1,9 @@
 "use client";
 
-import {VendorContainer} from "@/containers/vendorContainer/page";
-import 'styles/app.scss';
+import "styles/app.scss";
 
-const Home=()=> {
-  return (
-  <VendorContainer/>
-  )
-}
+const Home = () => {
+  return <p>Please go to /vendorList</p>;
+};
 
-
-
-export default Home
+export default Home;
