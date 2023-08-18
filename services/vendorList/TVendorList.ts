@@ -25,4 +25,6 @@ export type TDataFinalResult={
     cuisinesArray:Array<{id:number,title:string}>
     deliver:boolean
     deliveryFee:number
+    defLogo:string
+    best_coupon:string
 }
